@@ -58,7 +58,7 @@ html {
 body {
   font-size: 2rem;
   line-height: 1.5;
-  color: #9c9c9c;
+  color: #abb1bd;
   margin: 0;
   padding: 0
 }
@@ -148,7 +148,12 @@ p {
   margin: 0;
   padding: 0
 }
-
+.p-opacity-30 {
+    opacity: .3 !important
+}
+.p-opacity-50 {
+    opacity: .5 !important
+}
 .l-container {
   max-width: 470px;
   margin: 0 auto
@@ -160,11 +165,11 @@ p {
 }
 
 .c-page-header {
-  background: #f5f7fa;
+  background-image: linear-gradient(170deg, #5c8ce6, #25a785);
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 500px;
+  height: 420px;
   text-align: center;
   padding-top: 40px
 }
@@ -173,20 +178,26 @@ p {
 }
 .c-page-header__image {
   width: 30%;
-  border-radius: 50%
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 13px 0px rgba(22, 87, 127, 0.75)
 }
 .c-page-header__title {
-  padding: 30px
+  padding: 10px;
+  color: #fff
 }
 .c-page-header__description {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   line-height: 1.5;
-  font-weight: 300
+  font-weight: 300;
+  color: #fff;
+  font-weight: bold;
 }
-
 .c-bio {
   max-width: 760px;
+  margin-top: 40px
 }
+
 .c-social {
   margin: 33px 0 15px
 }
@@ -210,18 +221,18 @@ p {
 }
 .o-list {
   margin: 0;
-  padding: 0;
+  padding: 40px 0px;
   list-style: none
 }
 .o-list--inline .o-list__item {
   display: inline-block;
-  margin-right: 30px
+  width: 45px;
+  text-align: center;
 }
 .c-bio__description {
-  padding-top: 40px;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   line-height: 1.5;
-  font-weight: 300
+  font-weight: 300;
 }
 
 @media (min-width: 1200px) {
@@ -232,66 +243,9 @@ p {
 }
 .c-page-section {
   text-align: center;
-  padding: 70px 0
-}
-.c-page-section--projects {
-  color: #ffffff
+  padding: 50px 0
 }
 
-@media (min-width: 1200px) {
-  .c-company {
-    display: inline-block;
-    width: 50%
-  }
-  .c-company--chute,
-  .c-company--jobscore {
-    width: 100%
-  }
-}
-.c-company {
-  padding: 30px 0px;
-  min-height: 325px
-}
-.c-company--chute {
-  background: #32a3c3
-}
-.c-company--jobscore {
-  background: #f5f7fa;
-  color: #000000;
-}
-.c-company--beercrew {
-  background: #a14546
-}
-.c-company--a2c {
-  background: #4C4A4A
-}
-.c-company--tag {
-  background: #aaadb7;
-  color: #000000
-}
-.c-company--euax {
-  background: #f5f7fa;
-  color: #000000
-}
-.c-company__job {
-  padding: 18px 0px 30px 0px;
-  font-weight: normal
-}
-.c-company__description {
-  font-size: 1.5rem
-}
-.c-company__image {
-  height: auto;
-  max-height: 70px;
-  transition: all .2s ease-in-out
-}
-.c-company:hover .c-company__image {
-  transform: scale(1.1)
-}
-
-.c-contact {
-  color: #737475
-}
 @media screen and (max-width: 768px) {
   .c-contact {
     font-size: 1.8rem;
@@ -302,20 +256,20 @@ p {
   margin-top: 40px
 }
 .c-contact__title {
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  color: #8e8e8e;
 }
 
-.c-page-footer {
-}
 .c-footer {
   height: 54px;
   line-height: 54px
 }
 .c-footer__disclaimer {
   display: block;
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   line-height: 22px;
-  text-align: center
+  text-align: center;
+  margin-top: 60px
 }
 
 .c-button {
